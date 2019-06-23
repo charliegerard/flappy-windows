@@ -4,6 +4,11 @@
 
 ![Game gif](flappy-demo.gif)
 
+#### Status:
+
+I've developed this prototype using Chrome. It's currently a bit broken on Firefox. 😢
+
+
 ## How to play:
 
 * Avoid the obstacles by pressing the `space bar` on your keyboard to make Flappy Bird go up.
