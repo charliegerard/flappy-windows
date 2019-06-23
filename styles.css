@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(109,190, 200);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    font-family: monospace;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: 'Bangers';
+    letter-spacing: .1em;
+    font-size: 4em;
+    margin: 0;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.bird-container{
+    position: relative;
+    height: 70px;
+}
+
+.animation{
+    margin: 2em auto;
+    width: fit-content;
+    position: relative;
+}
+
+.space-bar{
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: .5em 2em;
+    width: fit-content;
+    box-shadow: none;
+    animation: changeColor 1s infinite;
+}
+
+.bird{
+    transform: translate(0px, 0px) rotate(0deg);
+    position: absolute;
+    animation-play-state: running;
+    width: 34px;
+    height: 24px;
+    background-image: url('../assets/bird.png');
+    -webkit-animation: animBird 300ms steps(4) infinite;
+    animation: animBird 300ms steps(4) infinite, flyBird 1s steps(4) infinite;
+}
+
+.score{
+    display: none;
+    font-family: 'Bangers';
+    font-size: 5em;
+    width: fit-content;
+    color: white;
+}
+
+.score .show{
+    display: block;
+}
+
+@keyframes animBird {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: 0px -96px;
+    }
+}
+
+@keyframes flyBird {
+    0% {
+        top:0px;
+    }
+    50% {
+        top:15px;
+    }
+    100% {
+        top: 30;
+    }
+}
+
+.buttons{
+    display: inline-flex;
+}
+
+.buttons span{
+    font-size: .7em;
+}
+
+.buttons .play{
+    background: white;
+}
+
+button{
+    display: flex;
+    margin: 2em .5em;
+    align-items: center;
+    padding: .5em 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: monospace;
+    border: 3px solid black;
+    font-size: 1.5em;
+    font-weight: bold;
+    background: lightgrey;
+}
+
+button.play:hover{
+    background-color: lightgrey;
+    box-shadow: inset 0 0 5px #000000;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-image: url('./assets/land.png');
+    background-repeat: repeat-x;
+    height: 15%;
+    animation: animLand 2516ms linear infinite;
+}
+
+@keyframes animLand {
+    0% {
+        background-position: 0px 0px;
+    }
+    100% {
+        background-position: -335px 0px;
+    }
+}
+
+@keyframes changeColor {
+    0% {
+        box-shadow: none;
+    }
+    50% {
+        box-shadow: none;
+    }
+    90%{
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: inset 0 0 5px #000000;
+    }
+}
+
+#mobile-message{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#mobile-message.mobile{
+    display: block;
+}
