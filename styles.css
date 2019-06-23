@@ -136,6 +136,13 @@ footer{
     background-repeat: repeat-x;
     height: 15%;
     animation: animLand 2516ms linear infinite;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer p{
+    font-size: .8em;
 }
 
 @keyframes animLand {

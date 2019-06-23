@@ -1,4 +1,4 @@
-# Flappy Bird game with browser windows
+# Flappy Bird with browser windows
 
 *This prototype was built over a weekend. This is not meant to be a full game.*
 
@@ -6,7 +6,7 @@
 
 #### Status:
 
-I've developed this prototype using Chrome. It's currently a bit broken on Firefox. 😢
+I've developed this prototype using Chrome. It's currently not really playable on Firefox. 😢
 
 
 ## How to play:
