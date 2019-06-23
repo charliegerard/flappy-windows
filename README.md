@@ -18,4 +18,14 @@ I've developed this prototype using Chrome. It's currently a bit broken on Firef
 * Press `r` to restart after you've hit an obstacle or touched the bottom of the screen;
 
 
+## Credits:
+
+Sounds from [this repo](https://github.com/nebez/floppybird).
+
+## Extra:
+
+Other prototype(s) built:
+
+* [Browser Pong](https://github.com/charliegerard/browser-pong)
+
 
