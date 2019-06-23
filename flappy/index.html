@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flappy</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        body{
+        body.flappy{
             background-image: url('../assets/flappy-gif.gif');
             background-position: center;
-            background-repeat: none;
+            background-repeat: no-repeat;
             background-size: cover;
+            margin-top: 6em;
         }
     </style>
 </head>
-<body>
+<body class="flappy">
     <audio class="jump" src="../assets/sfx_wing.ogg"></audio>
     <audio class="hit" src="../assets/sfx_hit.ogg"></audio>
     <audio class="die" src="../assets/sfx_die.ogg"></audio>

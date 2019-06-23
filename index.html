@@ -9,26 +9,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="score">0</div>
-    <main class="outer-container">
-        <h1>Flappy Bird</h1>
-        <div class="animation">
-            <div class="bird-container">
-                <div class="bird"></div>
-            </div>
-            <p class="space-bar">Space</p>
+    <section class="outer-container">
+        <div class="score">0</div>
+        <main>
+            <h1>Flappy Bird</h1>
+                <div class="animation">
+                    <div class="bird-container">
+                        <div class="bird"></div>
+                    </div>
+                    <p class="space-bar">Space</p>
+                </div>
+                <p>Play Flappy Bird with browser windows</p>
+                <div class="buttons">
+                    <button class="play">Play</button>
+                    <button>Q<span>(uit)</span></button>
+                    <button>R<span>(estart)</span></button>
+                </div>
+            </main>
+            
+        <div id="mobile-message">
+            <p>Hhmm... It looks like you're viewing this project on a mobile phone. As this game is played with browser windows, please check it out on a desktop!</p>
         </div>
-        <p>Play Flappy Bird with browser windows</p>
-        <div class="buttons">
-            <button class="play">Play</button>
-            <button>Q<span>(uit)</span></button>
-            <button>R<span>(estart)</span></button>
-        </div>
-    </main>
-    
-    <div id="mobile-message">
-        <p>Hhmm... It looks like you're viewing this project on a mobile phone. As this game is played with browser windows, please check it out on a desktop!</p>
-    </div>
+    </section>
 
     <footer></footer>
     <script src="index.js"></script>
