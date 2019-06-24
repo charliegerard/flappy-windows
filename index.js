@@ -66,8 +66,10 @@ const quit = () => {
 }
 
 const upFlappy = () => {
-    flappyWindow.moveBy(0, -70); 
-    flappyWindow.document.getElementsByClassName('jump')[0].play();
+    flappyWindow.moveBy(0, -70);
+    var jumpSound = flappyWindow.document.getElementsByClassName('jump')[0];
+    jumpSound.currentTime = 0;
+    jumpSound.play();
 };
 
 const moveFlappy = () => {
