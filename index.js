@@ -66,14 +66,14 @@ const quit = () => {
 }
 
 const upFlappy = () => {
-    flappyWindow.moveBy(0, -70);
+    flappyWindow.moveBy(0, -100);
     var jumpSound = flappyWindow.document.getElementsByClassName('jump')[0];
     jumpSound.currentTime = 0;
     jumpSound.play();
 };
 
 const moveFlappy = () => {
-    flappyWindow.moveBy(0, 3);
+    flappyWindow.moveBy(0, 4);
     checkForCollision();
     calculateScore();
 }
