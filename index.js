@@ -95,6 +95,7 @@ const restartGame = () => {
         firstObstacleWindow.moveTo(700, 0);
         secondObstacleWindow.moveTo(resolutionWidth - 100, resolutionHeight - 150);
         flappyWindow.lost = false;
+        currentScore = 0;
         displayScore(0);
         window.requestAnimationFrame(moveObstacle);
     }
