@@ -66,12 +66,14 @@ const quit = () => {
 }
 
 const upFlappy = () => {
-    flappyWindow.moveBy(0, -70); 
-    flappyWindow.document.getElementsByClassName('jump')[0].play();
+    flappyWindow.moveBy(0, -100);
+    var jumpSound = flappyWindow.document.getElementsByClassName('jump')[0];
+    jumpSound.currentTime = 0;
+    jumpSound.play();
 };
 
 const moveFlappy = () => {
-    flappyWindow.moveBy(0, 3);
+    flappyWindow.moveBy(0, 4);
     checkForCollision();
     calculateScore();
 }
@@ -93,6 +95,7 @@ const restartGame = () => {
         firstObstacleWindow.moveTo(700, 0);
         secondObstacleWindow.moveTo(resolutionWidth - 100, resolutionHeight - 150);
         flappyWindow.lost = false;
+        currentScore = 0;
         displayScore(0);
         window.requestAnimationFrame(moveObstacle);
     }
